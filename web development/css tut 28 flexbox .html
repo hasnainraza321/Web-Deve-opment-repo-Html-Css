@@ -1,0 +1,54 @@
+<H5>flexbox is a one diemensional layout method for laying out items in rows or columns.</H5>
+<H5>css flexbox is a better way to align item into a container</H5>
+<H5>flexbox = flexbox + box</H5>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox tut</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex properties for flex container */
+           flex-direction: row;
+           /* flex-direction: column;
+           flex-direction: row-reverse;
+           flex-direction: column-reverse; */
+
+           /* flex-wrap: wrap; */
+           /* flex-wrap: wrap-reverse; */
+
+           /* flex-flow: row-reverse wrap; */
+           justify-content: center;
+           justify-content: space-evenly;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+<h1>This is a flexbox </h1>
+<div class="container">
+    <div class="item" id="item-1">First box</div>
+    <div class="item" id="item-2">Second box</div>
+    <div class="item" id="item-3">Third box</div>
+    <div class="item" id="item-4">Fourth box</div>
+    <div class="item" id="item-5">fifth box</div>
+    <div class="item" id="item-6">sixth box</div>
+</div>
+    
+</body>
+</html>
